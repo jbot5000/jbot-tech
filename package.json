@@ -1,0 +1,11 @@
+{
+  "name": "portfolio-jbot-tech",
+  "version": "0.0.1",
+  "description": "Based on the portfolio I made for Free Code Camp.",
+  "author": "Jesse Benson <hello@je553.com> (http://jbot.tech)",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo 'Testing 123!'"
+  },
+  "dependencies": {}
+}

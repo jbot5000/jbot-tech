@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700");
+
+:root {
+    --almost-white: #fefefe;
+    --almost-black: #00152b;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--almost-white);
+    color: var(--almostblack);
+}
+
+section {
+    min-height: 100vh;
+    padding: 1em;
+}
+
+section:not(#welcome-section) {
+    padding-top: 4em;
+}
+
+code,
+kbd,
+pre {
+    font-family: 'Inconsolata', monospace;
+}
+
+#navbar {
+    z-index: 102;
+    width: 100%;
+    height: 4rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 1em;
+    display: grid;
+    grid-gap: 1em;
+    align-items: center;
+    grid-template-columns: 4rem auto auto;
+    grid-template-rows: 2rem;
+    grid-template-areas: "logo . nav";
+}
+
+#nav-links {
+    grid-area: nav;
+    justify-self: end;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 1em;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#nav-links li a {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    background: var(--almost-white);
+    border: 1px solid transparent;
+    color: teal;
+    padding: 0.25em 0.5em;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    border: 1px solid currentColor;
+    background: rgba(21,103,128, 0.2);
+    color: var(--almost-white);
+    transition: all 0.1s ease;
+}
+
+#nav-links li a:hover,
+#nav-links li a:focus {
+    background: var(--almost-white);
+    border: 1px solid transparent;
+    color: teal;
+}
+
+#logo-link {
+    height: 100%;
+}
+
+#logo-area {
+    display: inline-block;
+    align-self: center;
+    height: 100%;
+}
+
+#logo-art {
+    height: 100%;
+    width: auto;
+}
+
+#welcome-section {
+    z-index: 100;
+    min-height: 200px;
+    height: 100vh;
+    background: linear-gradient(15deg, lightgreen, teal);
+    color: var(--almost-white);
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    align-items: center;
+}
+
+#nav-bg {
+    z-index: 101;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(-15deg, lightgreen, teal);
+    height: 4rem;
+}
+
+.title {
+    margin: 0 auto;
+    max-width: 20em;
+    text-align: center;
+}
+
+.project-tile {
+    display: grid;
+    grid-template-areas:
+        "image image"
+        "title icon"
+}
+
+@media screen and (max-width: 400px) {
+    #navbar {
+        justify-items: center;
+        grid-template-columns: auto;
+        grid-template-areas:
+            "logo"
+            "nav";
+    }
+    #nav-bg {
+        height: 7rem;
+    }
+    #logo-area {
+        width: 4rem;
+    }
+    #nav-links {
+        justify-self: center;
+    }
+}
