@@ -5,7 +5,16 @@
   "author": "Jesse Benson <hello@je553.com> (http://jbot.tech)",
   "license": "MIT",
   "scripts": {
-    "test": "echo 'Testing 123!'"
+    "test": "echo 'Testing 123!'",
+    "riot:concat": "riot src/tags www/js/tags.min.js",
+    "sass:concat": "sass src/scss:www/css",
+    "movestatics": "cp src/index.html www/index.html",
+    "build": "yarn run riot:concat && yarn run sass:concat && yarn run movestatics"
   },
-  "dependencies": {}
+  "dependencies": {
+    "riot": "^3.10.3"
+  },
+  "devDependencies": {
+    "sass": "^1.7.1"
+  }
 }
