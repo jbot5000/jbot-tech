@@ -26,31 +26,29 @@ navbar {
     margin: 0;
     padding: 0;
     text-align: center;
-}
-
-#nav-links li a {
-    cursor: pointer;
-    display: inline-block;
-    text-decoration: none;
-    background: var(--almost-white);
-    border: 1px solid transparent;
-    color: teal;
-    padding: 0.25em 0.5em;
-    border-radius: 2px;
-    text-transform: uppercase;
-    font-size: 0.8em;
-    letter-spacing: 1px;
-    border: 1px solid currentColor;
-    background: rgba(21,103,128, 0.2);
-    color: var(--almost-white);
-    transition: all 0.1s ease;
-}
-
-#nav-links li a:hover,
-#nav-links li a:focus {
-    background: var(--almost-white);
-    border: 1px solid transparent;
-    color: teal;
+    li a {
+        cursor: pointer;
+        display: inline-block;
+        text-decoration: none;
+        background: var(--almost-white);
+        border: 1px solid transparent;
+        color: teal;
+        padding: 0.25em 0.5em;
+        border-radius: 2px;
+        text-transform: uppercase;
+        font-size: 0.8em;
+        letter-spacing: 1px;
+        border: 1px solid currentColor;
+        background: rgba(21,103,128, 0.2);
+        color: var(--almost-white);
+        transition: all 0.1s ease;
+        &:hover,
+        &:focus {
+            background: var(--almost-white);
+            border: 1px solid transparent;
+            color: teal;
+        }
+    }
 }
 
 #logo-link {
@@ -66,6 +64,7 @@ navbar {
 #logo-art {
     height: 100%;
     width: auto;
+    mix-blend-mode: difference;
 }
 
 @media screen and (max-width: 400px) {

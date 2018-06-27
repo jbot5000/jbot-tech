@@ -11,15 +11,6 @@ welcome-section {
   grid-template-rows: auto;
   align-items: center;
 }
-welcome-section:after {
-  z-index: 101;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  padding: 1rem;
-  background: linear-gradient(-15deg, lightgreen, teal);
-  height: 4rem;
-}
 
 .title {
   margin: 0 auto;
@@ -27,11 +18,6 @@ welcome-section:after {
   text-align: center;
 }
 
-@media screen and (max-width: 400px) {
-  welcome-section:after {
-    height: 7rem;
-  }
-}
 navbar {
   z-index: 102;
   width: 100%;
@@ -61,7 +47,6 @@ navbar {
   padding: 0;
   text-align: center;
 }
-
 #nav-links li a {
   cursor: pointer;
   display: inline-block;
@@ -79,9 +64,7 @@ navbar {
   color: var(--almost-white);
   transition: all 0.1s ease;
 }
-
-#nav-links li a:hover,
-#nav-links li a:focus {
+#nav-links li a:hover, #nav-links li a:focus {
   background: var(--almost-white);
   border: 1px solid transparent;
   color: teal;
@@ -100,6 +83,7 @@ navbar {
 #logo-art {
   height: 100%;
   width: auto;
+  mix-blend-mode: difference;
 }
 
 @media screen and (max-width: 400px) {
