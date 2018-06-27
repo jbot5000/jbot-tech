@@ -1,7 +1,7 @@
 {
   "name": "portfolio-jbot-tech",
-  "version": "0.0.1",
-  "description": "Based on the portfolio I made for Free Code Camp.",
+  "version": "0.0.2",
+  "description": "A place to show things off.",
   "author": "Jesse Benson <hello@je553.com> (http://jbot.tech)",
   "license": "MIT",
   "scripts": {
@@ -10,7 +10,7 @@
     "riot:watch": "riot --watch src/components/ www/js/tags.min.js",
     "sass:concat": "sass src:www/css",
     "sass:watch": "sass --watch src:www/css",
-    "movestatics": "cp src/index.html www/index.html",
+    "movestatics": "cp src/index.html www/index.html && cp node_modules/riot/riot.min.js www/js/riot.min.js",
     "cleanup": "rm -rf www/css/scss",
     "build": "yarn run riot:concat && yarn run sass:concat && yarn run movestatics && yarn run cleanup"
   },

@@ -8,7 +8,8 @@ welcome-section {
     grid-template-columns: auto;
     grid-template-rows: auto;
     align-items: center;
-    &:after {
+    &::after {
+        content: "";
         z-index: 101;
         position: sticky;
         top: 0;
@@ -26,7 +27,7 @@ welcome-section {
 }
 
 @media screen and (max-width: 400px) {
-    welcome-section:after {
+    welcome-section::after {
         height: 7rem;
     }
 }
