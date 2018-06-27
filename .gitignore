@@ -2,3 +2,4 @@ CNAME
 yarn.lock
 node_modules/
 www/
+yarn-error.log

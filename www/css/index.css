@@ -1,43 +1,38 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
 @import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700");
-:root {
-  --almost-white: #fefefe;
-  --almost-black: #00152b;
+welcome-section {
+  z-index: 100;
+  min-height: 200px;
+  height: 100vh;
+  background: linear-gradient(15deg, lightgreen, teal);
+  color: var(--almost-white);
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  align-items: center;
 }
-
-html {
-  font-family: "Montserrat", sans-serif;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
+welcome-section:after {
+  z-index: 101;
+  position: sticky;
+  top: 0;
   width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: var(--almost-white);
-  color: var(--almostblack);
+  padding: 1rem;
+  background: linear-gradient(-15deg, lightgreen, teal);
+  height: 4rem;
 }
 
-section {
-  min-height: 100vh;
-  padding: 1em;
+.title {
+  margin: 0 auto;
+  max-width: 20em;
+  text-align: center;
 }
 
-section:not(#welcome-section) {
-  padding-top: 4em;
+@media screen and (max-width: 400px) {
+  welcome-section:after {
+    height: 7rem;
+  }
 }
-
-code,
-kbd,
-pre {
-  font-family: "Inconsolata", monospace;
-}
-
-#navbar {
+navbar {
   z-index: 102;
   width: 100%;
   height: 4rem;
@@ -107,48 +102,11 @@ pre {
   width: auto;
 }
 
-#welcome-section {
-  z-index: 100;
-  min-height: 200px;
-  height: 100vh;
-  background: linear-gradient(15deg, lightgreen, teal);
-  color: var(--almost-white);
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  align-items: center;
-}
-
-#nav-bg {
-  z-index: 101;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  padding: 1rem;
-  background: linear-gradient(-15deg, lightgreen, teal);
-  height: 4rem;
-}
-
-.title {
-  margin: 0 auto;
-  max-width: 20em;
-  text-align: center;
-}
-
-.project-tile {
-  display: grid;
-  grid-template-areas: "image image" "title icon";
-}
-
 @media screen and (max-width: 400px) {
   #navbar {
     justify-items: center;
     grid-template-columns: auto;
     grid-template-areas: "logo" "nav";
-  }
-
-  #nav-bg {
-    height: 7rem;
   }
 
   #logo-area {
@@ -158,6 +116,48 @@ pre {
   #nav-links {
     justify-self: center;
   }
+}
+project-tile {
+  display: grid;
+  grid-template-areas: "image image" "title icon";
+}
+
+:root {
+  --almost-white: #fefefe;
+  --almost-black: #00152b;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--almost-white);
+  color: var(--almostblack);
+}
+
+.section {
+  min-height: 100vh;
+  padding: 1em;
+}
+
+.section:not(#welcome-section) {
+  padding-top: 4em;
+  display: block;
+}
+
+code,
+kbd,
+pre {
+  font-family: "Inconsolata", monospace;
 }
 
 /*# sourceMappingURL=index.css.map */

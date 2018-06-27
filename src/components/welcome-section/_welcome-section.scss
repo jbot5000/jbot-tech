@@ -1,0 +1,32 @@
+welcome-section {
+    z-index: 100;
+    min-height: 200px;
+    height: 100vh;
+    background: linear-gradient(15deg, lightgreen, teal);
+    color: var(--almost-white);
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    align-items: center;
+    &:after {
+        z-index: 101;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        padding: 1rem;
+        background: linear-gradient(-15deg, lightgreen, teal);
+        height: 4rem;
+    }
+}
+
+.title {
+    margin: 0 auto;
+    max-width: 20em;
+    text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+    welcome-section:after {
+        height: 7rem;
+    }
+}

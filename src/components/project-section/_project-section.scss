@@ -1,0 +1,6 @@
+project-tile {
+    display: grid;
+    grid-template-areas:
+        "image image"
+        "title icon"
+}
