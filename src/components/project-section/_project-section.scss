@@ -10,14 +10,12 @@ project-tile {
     grid-gap: 1rem;
     background-color: var(--light-grey);
     grid-template-columns: 1fr;
-    grid-template-areas:
-        "link"
-        "description"
-        "tags";
+    & > *:not(a):last-child {
+        padding-bottom: 1rem;
+    }
     a {
         display: block;
         position: relative;
-        grid-area: link;
         height: 10rem;
         h2 {
             position: absolute;
@@ -67,22 +65,21 @@ project-tile {
     p {
         padding: 0 1rem;
         display: block;
-        grid-area: description;
         margin: 0;
     }
     ul {
-        padding: 0 1rem 1rem 1rem;
+        padding: 0 1rem;
         display: block;
-        grid-area: tags;
         list-style-type: none;
         margin: 0;
         li {
-            display: inline-block;
+            display: inline-flex;
+            flex-wrap: wrap;
             background-color: var(--light-green);
             font-size: 0.8em;
             padding: 0.25em 0.5em;
             color: var(--teal);
-            margin-bottom: 0.25em;
+            margin: 0 0.25em 0.25em 0;
             &::before {
                 content: "#";
             }

@@ -37,6 +37,23 @@
                     "domain squatting",
                     "robots"
                 ]
+            },
+            "003": {
+                "title": "Got No Description!",
+                "description": "",
+                "link": "",
+                "thumbnail": "",
+                "tags": [
+                    "poop",
+                ]
+            },
+            "004": {
+                "title": "No Tags, Yo.",
+                "description": "Ain't got 'em",
+                "link": "#",
+                "thumbnail": "",
+                "tags": [
+                ]
             }
         };
     </script>
