@@ -2,7 +2,7 @@ welcome-section {
     z-index: 100;
     min-height: 200px;
     height: 100vh;
-    background: linear-gradient(15deg, lightgreen, teal);
+    background: linear-gradient(15deg, var(--light-green), var(--teal));
     color: var(--almost-white);
     display: grid;
     grid-template-columns: auto;

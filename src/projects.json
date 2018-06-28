@@ -1,0 +1,25 @@
+{
+    "001": {
+        "title": "Ruth Bader Ginsburg",
+        "description": "A tribute page for RBG made for a freeCodeCamp project. I focused on clean typography for this.",
+        "link": "https://codepen.io/jbot5000/pen/JZJbGZ",
+        "thumbnail": "",
+        "tags": [
+            "codepen",
+            "FCC",
+            "typography",
+            "drop cap"
+        ]
+    },
+    "002": {
+        "title": "👁❤🤖.ws",
+        "description": "I bought this domain as soon as I learned you could buy emoji domain names. Finally threw this together to squat on it while I think of something cooler to use this domain for.",
+        "link": "http://xn--qei0348mcbd.ws/",
+        "thumbnail": "",
+        "tags": [
+            "emoji",
+            "domain squatting",
+            "robots"
+        ]
+    }
+}

@@ -1,6 +1,66 @@
+.project-list {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
 project-tile {
     display: grid;
+    grid-gap: 1rem;
+    background-color: var(--light-grey);
+    grid-template-columns: 1fr;
     grid-template-areas:
-        "image image"
-        "title icon"
+        "link"
+        "description"
+        "tags";
+    a {
+        display: block;
+        position: relative;
+        grid-area: link;
+        height: 10rem;
+        h2 {
+            position: absolute;
+            top: 1rem;
+            left: 0;
+            padding: 0.25rem 1rem;
+            margin: 0;
+            font-size: 1.1em;
+            background-color: var(--teal);
+            color: var(--almost-white);
+            z-index: 1;
+        }
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: var(--mid-grey);
+        }
+    }
+    p {
+        padding: 0 1rem;
+        display: block;
+        grid-area: description;
+        margin: 0;
+    }
+    ul {
+        padding: 0 1rem 1rem 1rem;
+        display: block;
+        grid-area: tags;
+        list-style-type: none;
+        margin: 0;
+        li {
+            display: inline-block;
+            background-color: var(--light-green);
+            font-size: 0.8em;
+            padding: 0.25em 0.5em;
+            color: var(--teal);
+            margin-bottom: 0.25em;
+            &::before {
+                content: "#";
+            }
+        }
+    }
 }

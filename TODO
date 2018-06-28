@@ -1,0 +1,4 @@
+- [ ] Navbar has background when not overlaying welcome-section
+- [ ] Project-tile contains title, description, link, thumbnail, and tags
+- [ ] Project-section takes json of project data and lays out project-tiles
+- [ ] Contact-section displays github and contact form

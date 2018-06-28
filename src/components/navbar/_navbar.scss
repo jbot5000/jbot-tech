@@ -32,7 +32,7 @@ navbar {
         text-decoration: none;
         background: var(--almost-white);
         border: 1px solid transparent;
-        color: teal;
+        color: var(--teal);
         padding: 0.25em 0.5em;
         border-radius: 2px;
         text-transform: uppercase;
@@ -46,7 +46,7 @@ navbar {
         &:focus {
             background: var(--almost-white);
             border: 1px solid transparent;
-            color: teal;
+            color: var(--teal);
         }
     }
 }
