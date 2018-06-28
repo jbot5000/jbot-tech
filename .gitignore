@@ -1,5 +1,5 @@
 CNAME
 yarn.lock
 node_modules/
-www/
+www/*
 yarn-error.log
